@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#090d18">
+    <title>Contact | Naga Chandu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <script defer src="assets/js/global.js"></script>
+    <script defer src="assets/js/contact.js"></script>
+</head>
+<body>
+    <div id="site-header"></div>
+    <main class="container page-main">
+        <header class="page-heading reveal">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h1>Start a <span class="gradient-text">conversation.</span></h1>
+            <p>Interested in opportunities, collaboration, or discussing technology? Feel free to reach out.</p>
+        </header>
+        <section class="contact-layout">
+            <article class="panel contact-intro reveal">
+                <p class="eyebrow">CONTACT DETAILS</p>
+                <h2>Have an opportunity<br>or an idea?</h2>
+                <p>I'm open to connecting about entry-level software development opportunities, internships, and interesting projects.</p>
+                <a class="contact-method" href="mailto:makkenanagachandu17@gmail.com">
+                    <span class="contact-icon">✉</span>
+                    <span><small>EMAIL ME</small><strong>makkenanagachandu17@gmail.com</strong></span>
+                    <span class="contact-arrow">↗</span>
+                </a>
+                <a class="contact-method" href="tel:+917386275798"><span class="contact-icon">⌕</span><span><small>CALL ME</small><strong>+91 73862 75798</strong></span><span class="contact-arrow">↗</span></a>
+                <div class="availability">
+                    <span class="status-dot"></span> Open to opportunities
+                </div>
+            </article>
+            <form class="panel contact-form reveal" id="contactForm">
+                <p class="eyebrow">SEND A MESSAGE</p>
+                <label for="name">Your name</label>
+                <input id="name" name="name" type="text" placeholder="Enter your name" required>
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="What would you like to discuss?" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+                <button class="btn btn-primary" type="submit">Prepare email <span>↗</span></button>
+                <p class="form-note" id="formNote">This form opens your email app with the message ready to send.</p>
+            </form>
+        </section>
+    </main>
+    <div id="site-footer"></div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+.about-layout{
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    gap:22px
+}
+.bio-panel,.focus-panel{
+    padding:30px
+}
+.bio-panel h2,.focus-panel h2{
+    font:600 1.8rem var(--display);
+    letter-spacing:-.04em;
+    margin:0 0 16px
+}
+.bio-panel p,.focus-item p{
+    color:var(--muted);
+    font-size:.92rem;
+    line-height:1.85
+}
+.pill-row{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-top:22px
+}
+.pill-row span,.result-chip{
+    font-size:.72rem;
+    color:#b7c9e7;
+    background:rgba(112,165,255,.09);
+    border:1px solid rgba(112,165,255,.17);
+    padding:6px 10px;border-radius:99px
+}
+.focus-item{
+    display:flex;
+    gap:15px;
+    padding:19px 0;
+    border-bottom:1px solid var(--line)
+}
+.focus-item:last-child{
+    border:0
+}
+.focus-icon{
+    width:40px;
+    height:40px;
+    flex:0 0 40px;
+    display:grid;
+    place-items:center;
+    background:rgba(126,147,255,.1);
+    border-radius:11px;
+    color:var(--blue);
+    font-size:1.15rem
+}
+.focus-item h3{
+    font:600 1rem var(--display);
+    margin:0
+}
+.focus-item p{
+    font-size:.82rem;
+    margin:4px 0 0
+}
+.timeline{
+    border-left:1px solid rgba(112,165,255,.3);
+    margin-left:8px;
+    padding-left:28px
+}
+.timeline-item{
+    position:relative;
+    display:grid;
+    grid-template-columns:180px 1fr;
+    gap:20px;
+    padding:0 0 32px
+}
+.timeline-item:last-child{
+    padding-bottom:0
+}
+.timeline-mark{
+    position:absolute;
+    width:11px;
+    height:11px;
+    background:var(--blue);
+    border:3px solid var(--bg);
+    box-shadow:0 0 0 1px var(--blue);
+    border-radius:50%;
+    left:-34px;
+    top:5px
+}
+.timeline-date{
+    font-size:.72rem;
+    color:var(--blue);
+    letter-spacing:.08em;
+    font-weight:700
+}
+.timeline-content h3{
+    font:600 1.12rem var(--display);
+    margin:0 0 5px
+}
+.timeline-content p{
+    color:var(--muted);
+    font-size:.87rem;
+    margin:0 0 12px
+}
+.result-chip{
+    display:inline-block;
+    font-size:.68rem
+}
+@media(max-width:760px){
+    .about-layout{
+        grid-template-columns:1fr
+    }
+    .timeline-item{
+        grid-template-columns:1fr;
+        gap:5px
+    }
+    .bio-panel,.focus-panel{
+        padding:24px
+    }
+}

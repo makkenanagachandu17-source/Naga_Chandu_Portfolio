@@ -1,0 +1,110 @@
+.contact-layout{
+    display:grid;
+    grid-template-columns:.95fr 1.05fr;
+    gap:20px
+}
+.contact-intro,.contact-form{
+    padding:30px
+}
+.contact-intro h2{
+    font:600 2rem/1.15 var(--display);
+    letter-spacing:-.05em;
+    margin:20px 0 13px
+}
+.contact-intro>p:not(.eyebrow){
+    color:var(--muted);
+    font-size:.88rem;
+    line-height:1.8
+}
+.contact-method{
+    display:flex;
+    align-items:center;
+    gap:13px;
+    padding:16px 0;
+    border-bottom:1px solid var(--line)
+}
+.contact-method:first-of-type{
+    margin-top:24px
+}
+.contact-icon{
+    width:40px;
+    height:40px;
+    display:grid;
+    place-items:center;
+    border-radius:10px;
+    background:rgba(112,165,255,.1);
+    color:var(--blue);
+    font-size:1.1rem
+}
+.contact-method>span:nth-child(2){
+    display:grid;
+    gap:2px;
+    min-width:0
+}
+.contact-method small{
+    font-size:.6rem;
+    color:var(--soft);
+    letter-spacing:.12em
+}
+.contact-method strong{
+    font-size:.78rem;
+    color:#d7e2f5;
+    overflow-wrap:anywhere
+}
+.contact-arrow{
+    margin-left:auto;
+    color:var(--blue)
+}
+.availability{
+    display:flex;
+    align-items:center;
+    gap:9px;
+    font-size:.75rem;
+    color:var(--cyan);
+    margin-top:22px
+}
+.contact-form{
+    display:flex;
+    flex-direction:column
+}
+.contact-form label{
+    font-size:.76rem;
+    color:#c6d2e7;
+    margin:12px 0 7px
+}
+.contact-form input,.contact-form textarea{
+    width:100%;
+    background:#0b1322;
+    border:1px solid var(--line);
+    border-radius:8px;
+    color:var(--text);
+    padding:12px 13px;
+    outline:none;
+    font-size:.82rem;
+    resize:vertical;
+    transition:border-color .2s,box-shadow .2s
+}
+.contact-form input:focus,.contact-form textarea:focus{
+    border-color:rgba(112,165,255,.65);
+    box-shadow:0 0 0 3px rgba(112,165,255,.08)
+}
+.contact-form input::placeholder,.contact-form textarea::placeholder{
+    color:#64738b
+}
+.contact-form button{
+    margin-top:18px;
+    align-self:flex-start
+}
+.form-note{
+    font-size:.68rem;
+    color:var(--soft);
+    margin:10px 0 0
+}
+@media(max-width:760px){
+    .contact-layout{
+        grid-template-columns:1fr
+    }
+    .contact-intro,.contact-form{
+        padding:24px
+    }
+}

@@ -1,0 +1,356 @@
+.hero{
+    min-height:620px;
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    align-items:center;
+    gap:50px;
+    padding-top:48px;
+    padding-bottom:50px
+}
+.hero-copy .eyebrow{
+    display:flex;
+    align-items:center;
+    gap:10px
+}
+.hero h1{
+    font:600 clamp(3.25rem,6.4vw,5.35rem)/1.03 var(--display);
+    letter-spacing:-.075em;
+    margin:20px 0 24px
+}
+.hero-lead{
+    color:var(--muted);
+    font-size:1.04rem;
+    max-width:530px;
+    line-height:1.8
+}
+.hero-lead strong{
+    color:var(--text)
+}
+.hero-actions{
+    display:flex;
+    gap:12px;
+    margin-top:30px;
+    flex-wrap:wrap
+}
+.hero-meta{
+    display:flex;
+    align-items:center;
+    gap:13px;
+    color:var(--soft);
+    font-size:.78rem;
+    margin-top:34px
+}
+.meta-line{
+    width:28px;
+    height:1px;
+    background:var(--soft)
+}
+.hero-visual{
+    height:430px;
+    position:relative;
+    display:grid;
+    place-items:center
+}
+.orb{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(1px)
+}
+.orb-one{
+    width:330px;
+    height:330px;
+    background:radial-gradient(circle at 35% 35%,rgba(94,146,255,.25),rgba(124,90,211,.06) 62%,transparent 70%);
+    border:1px solid rgba(133,159,255,.15)
+}
+.orb-two{
+    width:235px;
+    height:235px;
+    border:1px solid rgba(102,224,210,.17);
+    transform:rotate(35deg) scaleY(.55)
+}
+.code-card{
+    position:relative;
+    width:min(100%,420px);
+    background:rgba(15,24,41,.94);
+    border:1px solid rgba(139,169,229,.2);
+    border-radius:16px;
+    box-shadow:0 30px 90px rgba(0,0,0,.35),0 0 60px rgba(102,133,255,.1);
+    overflow:hidden;
+    transform:rotate(-2deg);
+    animation:float 7s ease-in-out infinite
+}
+.code-top{
+    height:43px;
+    border-bottom:1px solid var(--line);
+    display:flex;
+    align-items:center;
+    gap:6px;
+    padding:0 15px
+}
+.code-top>span{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:#ed7c89
+}
+.code-top>span:nth-child(2){
+    background:#e6c36f
+}
+.code-top>span:nth-child(3){
+    background:#6ad6b0
+}
+.code-top small{
+    margin-left:auto;
+    color:var(--soft);
+    font-size:.68rem
+}
+.code-card pre{
+    margin:0;
+    padding:25px 24px 20px;
+    overflow:auto;
+    color:#b8c5dc;
+    font: .78rem/1.9 ui-monospace,SFMono-Regular,Consolas,monospace
+}
+.code-card code i{
+    color:#a78bfa;
+    font-style:normal
+}
+.code-card code b{
+    color:#83d9cc;
+    font-weight:500
+}
+.code-footer{
+    border-top:1px solid var(--line);
+    padding:13px 18px;
+    color:var(--soft);
+    font-size:.68rem;
+    display:flex;
+    align-items:center;
+    gap:9px
+}
+.floating-tag{
+    position:absolute;
+    background:#17243b;
+    border:1px solid var(--line);
+    padding:9px 13px;
+    border-radius:9px;
+    font-size:.72rem;
+    color:#c9d6ed;
+    box-shadow:0 10px 30px rgba(0,0,0,.2)
+}
+.tag-top{
+    top:55px;
+    right:0
+}
+.tag-bottom{
+    bottom:55px;
+    left:0
+}
+.hero-visual {
+
+    isolation: isolate;
+
+}
+
+.profile-photo-badge {
+
+    position: absolute;
+
+    z-index: 5;
+
+    right: 2%;
+
+    bottom: 22px;
+
+    width: 126px;
+
+    height: 126px;
+
+    padding: 5px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+
+        135deg,
+
+        #70a5ff,
+
+        #a88bff,
+
+        #66e0d2
+
+    );
+
+    box-shadow: 0 14px 38px rgba(80,120,255,.32);
+
+    animation: profilePhotoFloat 5s ease-in-out infinite;
+
+}
+
+.profile-photo {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border: 3px solid #111a2b;
+
+    border-radius: 50%;
+
+}
+
+@keyframes profilePhotoFloat {
+
+    0%, 100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-9px);
+    }
+}
+.quick-stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    border-block:1px solid var(--line);
+    padding:25px 0
+}
+.quick-stats div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:4px;
+    border-right:1px solid var(--line)
+}
+.quick-stats div:last-child{
+    border:0
+}
+.quick-stats strong{
+    font:600 1.65rem var(--display);
+    color:var(--text)
+}
+.quick-stats span{
+    font-size:.74rem;
+    color:var(--soft)
+}
+.home-about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center
+}
+.section-copy{
+    color:var(--muted);
+    line-height:1.9;
+    margin:0
+}
+.cta{
+    margin-top:105px;
+    padding:42px 48px;
+    border:1px solid var(--line);
+    border-radius:20px;
+    background:radial-gradient(circle at 80% 20%,rgba(117,112,222,.17),transparent 38%),linear-gradient(110deg,#111b2d,#111629);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:25px
+}
+.cta h2{
+    font:600 clamp(2rem,4vw,3rem)/1.12 var(--display);
+    letter-spacing:-.05em;
+    margin:0
+}
+.cta .eyebrow{
+    margin-bottom:12px
+}
+@keyframes float{
+    0%,100%{
+        transform:translateY(0) rotate(-2deg)
+    }
+    50%{
+        transform:translateY(-12px) rotate(-1deg)
+    }
+}
+@media(max-width:850px){
+    .hero{
+        grid-template-columns:1fr;
+        gap:5px;
+        padding-top:65px
+    }
+    .hero-visual{
+        height:370px
+    }
+    .home-about{
+        gap:35px
+    }
+    .tag-top{
+        right:5%
+    }
+    .tag-bottom{
+        left:5%
+    }
+    .profile-photo-badge{
+        right: 6%;
+        bottom: 12px;
+        width: 112px;
+        height: 112px;
+    }
+}
+@media(max-width:600px){
+    .hero{
+        min-height:auto;
+        padding-top:55px
+    }
+    .hero h1{
+        font-size:3.25rem
+    }
+    .hero-visual{
+        height:330px
+    }
+    .code-card pre{
+        font-size:.68rem;
+        padding:18px
+    }
+    .quick-stats{
+        grid-template-columns:repeat(2,1fr);
+        row-gap:20px
+    }
+    .quick-stats div:nth-child(2){
+        border:0
+    }
+    .quick-stats strong{
+        font-size:1.4rem
+    }
+    .quick-stats span{
+        font-size:.68rem
+    }
+    .home-about{
+        grid-template-columns:1fr;
+        gap:22px
+    }
+    .cta{
+        padding:30px 25px;
+        align-items:flex-start;
+        flex-direction:column;
+        margin-top:75px
+    }
+    .hero-meta{
+        font-size:.68rem
+    }
+    .profile-photo-badge{
+        right: 3%;
+        bottom: 5px;
+        width: 92px;
+        height: 92px;
+    }
+}

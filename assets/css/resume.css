@@ -1,0 +1,96 @@
+.resume-layout{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:20px
+}
+.resume-summary,.resume-highlights{
+    padding:30px
+}
+.resume-topline{
+    display:flex;
+    align-items:center;
+    gap:13px
+}
+.resume-file-icon{
+    width:43px;
+    height:48px;
+    border-radius:8px;
+    background:rgba(112,165,255,.12);
+    display:grid;
+    place-items:center;
+    color:var(--blue);
+    font:700 .75rem var(--display);
+    border:1px solid rgba(112,165,255,.2)
+}
+.resume-summary h2{
+    font:600 1.8rem var(--display);
+    letter-spacing:-.05em;
+    margin:22px 0 5px
+}
+.resume-summary>p{
+    color:var(--muted);
+    font-size:.86rem;
+    margin:0
+}
+.resume-details{
+    display:grid;
+    gap:16px;
+    margin:26px 0
+}
+.resume-details div{
+    display:grid;
+    gap:3px
+}
+.resume-details small{
+    font-size:.62rem;
+    color:var(--soft);
+    letter-spacing:.13em
+}
+.resume-details a,.resume-details span{
+    font-size:.85rem;
+    color:#cbd7eb;
+    overflow-wrap:anywhere
+}
+.resume-details a:hover{
+    color:var(--blue)
+}
+.download-btn{
+    width:100%
+}
+.resume-highlights .eyebrow{
+    margin-bottom:18px
+}
+.highlight-row{
+    padding:16px 0;
+    border-bottom:1px solid var(--line);
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    align-items:center
+}
+.highlight-row:last-child{
+    border:0
+}
+.highlight-row strong{
+    font:600 1.25rem var(--display);
+    color:var(--blue);
+    white-space:nowrap
+}
+.highlight-row span{
+    font-size:.78rem;
+    color:var(--muted);
+    text-align:right
+}
+.resume-footnote{
+    font-size:.75rem;
+    color:var(--soft);
+    margin-top:20px
+}
+@media(max-width:760px){
+    .resume-layout{
+        grid-template-columns:1fr
+    }
+    .resume-summary,.resume-highlights{
+        padding:24px
+    }
+}
